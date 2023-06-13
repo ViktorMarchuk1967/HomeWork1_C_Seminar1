@@ -29,6 +29,7 @@ else
 22 3 9 -> 22
 */
 
+/*
 Console.Write("Введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
@@ -44,7 +45,7 @@ if (max < num2)
 if (max < num3)
     max = num3;
 Console.Write(max);
-
+*/
 
 
 /*
@@ -53,6 +54,15 @@ Console.Write(max);
 -3 -> нет
 7 -> нет
 */
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num % 2 == 0)
+    Console.Write("Да");
+else 
+    Console.Write("Нет");
+
+
 
 /*
 Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
