@@ -55,13 +55,14 @@ Console.Write(max);
 7 -> нет
 */
 
+/*
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num % 2 == 0)
     Console.Write("Да");
 else 
     Console.Write("Нет");
-
+*/
 
 
 /*
@@ -70,4 +71,17 @@ else
 8 -> 2, 4, 6, 8
 */
 
+Console.Write("Введите целое число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int start = 1;
+while (start <= number)
+{
+    if (start % 2 == 0)
+    {
+        Console.Write(start);
+        if (start < number - 1)
+            Console.Write(", ");
+    }        
+    start++;
+}
 
