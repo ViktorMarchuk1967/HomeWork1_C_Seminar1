@@ -5,6 +5,7 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 
+/*
 Console.Write("Введите первое число: ");
 string number = Console.ReadLine()!;
 int num1 = int.Parse(number);
@@ -17,7 +18,7 @@ else if (num1 < num2)
     Console.Write($"max = {num2}");
 else
     Console.Write("Числа равны.");
-
+*/
 
 
 
@@ -27,6 +28,24 @@ else
 44 5 78 -> 78
 22 3 9 -> 22
 */
+
+Console.Write("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите третье число: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+int max = num1;
+
+
+if (max < num2)
+    max = num2;
+if (max < num3)
+    max = num3;
+Console.Write(max);
+
+
 
 /*
 Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
